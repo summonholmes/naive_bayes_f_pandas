@@ -70,7 +70,7 @@ X_1["No"]["P(X|Play=No)P(Play=No)"] = X_1["No"].prod(axis=1)
 X_1["Total"]["P(X)"] = X_1["Total"].prod(axis=1)
 
 # %% Get probabilities for yes
-X_1["Yes"]["P(X|Play=Yes)P(Play=Yes)"] / X_1["Total"]["P(X)"]
+X_1["Yes"]["P(X|Play=Yes)P(Play=Yes)"][0] / X_1["Total"]["P(X)"][0]
 
 # %% Get probabilities for no
-X_1["No"]["P(X|Play=No)P(Play=No)"] / X_1["Total"]["P(X)"]
+X_1["No"]["P(X|Play=No)P(Play=No)"][0] / X_1["Total"]["P(X)"][0]
